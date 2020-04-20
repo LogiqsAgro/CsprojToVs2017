@@ -58,14 +58,14 @@ namespace Project2015To2017.Reading
 				return null;
 			}
 
-			var packageConfig = this.nuspecReader.Read(projectFile);
+			//var packageConfig = this.nuspecReader.Read(projectFile);
 
 			projectDefinition = new Project
 			{
 				IsModernProject = isModern,
 				FilePath = projectFile,
 				ProjectDocument = projectXml,
-				PackageConfiguration = packageConfig,
+				PackageConfiguration = null,
 				Deletions = Array.Empty<FileSystemInfo>(),
 				AssemblyAttributeProperties = Array.Empty<XElement>()
 			};
